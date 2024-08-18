@@ -1,0 +1,318 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore.dataaccess\\configurations\\permissionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\configurations\\permissionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|d:\\projectsc\u0438\u0448\u0430\u0440\u043F\\bookstore\\bookstore.dataaccess\\entities\\rolepermissionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\entities\\rolepermissionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore.dataaccess\\configurations\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\configurations\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore\\contracts\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\contracts\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore.dataaccess\\configurations\\rolepermissionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\configurations\\rolepermissionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4064FB93-9A09-4059-8AB5-E984257BCD6B}|BookStore.Application\\BookStore.Application.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore.application\\services\\permissionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4064FB93-9A09-4059-8AB5-E984257BCD6B}|BookStore.Application\\BookStore.Application.csproj|solutionrelative:bookstore.application\\services\\permissionrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore.dataaccess\\entities\\permissionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\entities\\permissionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore.dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore.dataaccess\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore.dataaccess\\authorizationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47E8BF8F-A3C5-4B83-8159-5D9AE55F2359}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\authorizationoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4064FB93-9A09-4059-8AB5-E984257BCD6B}|BookStore.Application\\BookStore.Application.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore.application\\services\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4064FB93-9A09-4059-8AB5-E984257BCD6B}|BookStore.Application\\BookStore.Application.csproj|solutionrelative:bookstore.application\\services\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore\\extensions\\apiextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\extensions\\apiextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0325CA3-D225-43AA-BB81-4B6D3AA8ED5B}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4064FB93-9A09-4059-8AB5-E984257BCD6B}|BookStore.Application\\BookStore.Application.csproj|D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\bookstore.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4064FB93-9A09-4059-8AB5-E984257BCD6B}|BookStore.Application\\BookStore.Application.csproj|solutionrelative:bookstore.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 391,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterUserRequest.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\Contracts\\RegisterUserRequest.cs",
+              "RelativeDocumentMoniker": "BookStore\\Contracts\\RegisterUserRequest.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\Contracts\\RegisterUserRequest.cs",
+              "RelativeToolTip": "BookStore\\Contracts\\RegisterUserRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T16:23:13.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BookStore\\appsettings.Development.json",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\appsettings.Development.json",
+              "RelativeToolTip": "BookStore\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-18T12:33:54.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleConfiguration.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Configurations\\RoleConfiguration.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\Configurations\\RoleConfiguration.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Configurations\\RoleConfiguration.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\Configurations\\RoleConfiguration.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T12:28:28.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PermissionConfiguration.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Configurations\\PermissionConfiguration.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\Configurations\\PermissionConfiguration.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Configurations\\PermissionConfiguration.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\Configurations\\PermissionConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T12:28:16.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RolePermissionEntity.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Entities\\RolePermissionEntity.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\Entities\\RolePermissionEntity.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Entities\\RolePermissionEntity.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\Entities\\RolePermissionEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T12:04:18.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PermissionEntity.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Entities\\PermissionEntity.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\Entities\\PermissionEntity.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Entities\\PermissionEntity.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\Entities\\PermissionEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T12:04:36.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\Program.cs",
+              "RelativeDocumentMoniker": "BookStore\\Program.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\Program.cs",
+              "RelativeToolTip": "BookStore\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T13:54:39.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RolePermissionConfiguration.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Configurations\\RolePermissionConfiguration.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\Configurations\\RolePermissionConfiguration.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Configurations\\RolePermissionConfiguration.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\Configurations\\RolePermissionConfiguration.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T10:37:38.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T12:04:41.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthorizationOptions.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\AuthorizationOptions.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\AuthorizationOptions.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\AuthorizationOptions.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\AuthorizationOptions.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T12:04:24.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PermissionRequirement.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.Application\\Services\\PermissionRequirement.cs",
+              "RelativeDocumentMoniker": "BookStore.Application\\Services\\PermissionRequirement.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.Application\\Services\\PermissionRequirement.cs",
+              "RelativeToolTip": "BookStore.Application\\Services\\PermissionRequirement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T12:03:21.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookStoreDbContext.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\BookStoreDbContext.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\BookStoreDbContext.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.DataAccess\\BookStoreDbContext.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\BookStoreDbContext.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAjwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T10:21:03.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookStore\\Controllers\\BooksController.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookStore\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T10:10:12.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApiExtensions.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\Extensions\\ApiExtensions.cs",
+              "RelativeDocumentMoniker": "BookStore\\Extensions\\ApiExtensions.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\Extensions\\ApiExtensions.cs",
+              "RelativeToolTip": "BookStore\\Extensions\\ApiExtensions.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwDAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T09:34:31.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "JWTProvider.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.Application\\Services\\JWTProvider.cs",
+              "RelativeDocumentMoniker": "BookStore.Application\\Services\\JWTProvider.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.Application\\Services\\JWTProvider.cs",
+              "RelativeToolTip": "BookStore.Application\\Services\\JWTProvider.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwBwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T13:22:47.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BookStore\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore\\Controllers\\UserController.cs",
+              "RelativeToolTip": "BookStore\\Controllers\\UserController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T12:42:32.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BookStore.Application\\Services\\UserService.cs",
+              "ToolTip": "D:\\ProjectsC\u0438\u0428\u0430\u0440\u043F\\BookStore\\BookStore.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "BookStore.Application\\Services\\UserService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T12:29:10.205Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 97,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 351,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
