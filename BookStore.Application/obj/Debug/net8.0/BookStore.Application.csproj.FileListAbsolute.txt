@@ -28,3 +28,4 @@ D:\ProjectsCиШарп\BookStore\BookStore.Application\obj\Debug\net8.0\BookStor
 D:\ProjectsCиШарп\BookStore\BookStore.Application\obj\Debug\net8.0\refint\BookStore.Application.dll
 D:\ProjectsCиШарп\BookStore\BookStore.Application\obj\Debug\net8.0\BookStore.Application.pdb
 D:\ProjectsCиШарп\BookStore\BookStore.Application\obj\Debug\net8.0\ref\BookStore.Application.dll
+D:\ProjectsCиШарп\BookStore\BookStore.Application\obj\Debug\net8.0\BookStore.Application.sourcelink.json

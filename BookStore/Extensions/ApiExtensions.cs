@@ -45,7 +45,7 @@ namespace BookStore.Extensions
 
                 options.AddPolicy("UserPolicy", policy =>
                 {
-                    policy.RequireClaim("USer", "true");
+                    policy.RequireClaim("User", "true");
                 });
             });
         }

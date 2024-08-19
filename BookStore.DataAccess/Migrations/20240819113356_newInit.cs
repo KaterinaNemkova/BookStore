@@ -9,19 +9,24 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BookStore.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class roles : Migration
+    public partial class newInit : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<string>(
-                name: "Title",
-                table: "Books",
-                type: "character varying(250)",
-                maxLength: 250,
-                nullable: false,
-                oldClrType: typeof(string),
-                oldType: "text");
+            migrationBuilder.CreateTable(
+                name: "Books",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Title = table.Column<string>(type: "character varying(250)", maxLength: 250, nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: false),
+                    Price = table.Column<decimal>(type: "numeric", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Books", x => x.Id);
+                });
 
             migrationBuilder.CreateTable(
                 name: "PermissionEntity",
@@ -47,6 +52,20 @@ namespace BookStore.DataAccess.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Roles", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    UserName = table.Column<string>(type: "text", nullable: false),
+                    PasswordHash = table.Column<string>(type: "text", nullable: false),
+                    Email = table.Column<string>(type: "text", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -82,7 +101,7 @@ namespace BookStore.DataAccess.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UserRoleEntity", x => new { x.RoleId, x.UserId });
+                    table.PrimaryKey("PK_UserRoleEntity", x => new { x.UserId, x.RoleId });
                     table.ForeignKey(
                         name: "FK_UserRoleEntity_Roles_RoleId",
                         column: x => x.RoleId,
@@ -116,21 +135,36 @@ namespace BookStore.DataAccess.Migrations
                     { 1, "Admin" },
                     { 2, "User" }
                 });
-          
+
+            migrationBuilder.InsertData(
+                table: "RolePermissionEntity",
+                columns: new[] { "PermissionId", "RoleId" },
+                values: new object[,]
+                {
+                    { 1, 1 },
+                    { 2, 1 },
+                    { 3, 1 },
+                    { 4, 1 },
+                    { 1, 2 }
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_RolePermissionEntity_PermissionId",
                 table: "RolePermissionEntity",
                 column: "PermissionId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_UserRoleEntity_UserId",
+                name: "IX_UserRoleEntity_RoleId",
                 table: "UserRoleEntity",
-                column: "UserId");
+                column: "RoleId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Books");
+
             migrationBuilder.DropTable(
                 name: "RolePermissionEntity");
 
@@ -143,14 +177,8 @@ namespace BookStore.DataAccess.Migrations
             migrationBuilder.DropTable(
                 name: "Roles");
 
-            migrationBuilder.AlterColumn<string>(
-                name: "Title",
-                table: "Books",
-                type: "text",
-                nullable: false,
-                oldClrType: typeof(string),
-                oldType: "character varying(250)",
-                oldMaxLength: 250);
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }

@@ -26,3 +26,4 @@ D:\ProjectsCиШарп\BookStore\BookStore.Core\obj\Debug\net8.0\refint\BookStor
 D:\ProjectsCиШарп\BookStore\BookStore.Core\obj\Debug\net8.0\BookStore.Core.pdb
 D:\ProjectsCиШарп\BookStore\BookStore.Core\obj\Debug\net8.0\BookStore.Core.genruntimeconfig.cache
 D:\ProjectsCиШарп\BookStore\BookStore.Core\obj\Debug\net8.0\ref\BookStore.Core.dll
+D:\ProjectsCиШарп\BookStore\BookStore.Core\obj\Debug\net8.0\BookStore.Core.sourcelink.json

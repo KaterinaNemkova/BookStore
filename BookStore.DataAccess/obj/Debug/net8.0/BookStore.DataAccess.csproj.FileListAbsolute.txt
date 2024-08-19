@@ -32,3 +32,4 @@ D:\ProjectsCиШарп\BookStore\BookStore.DataAccess\obj\Debug\net8.0\refint\Bo
 D:\ProjectsCиШарп\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.pdb
 D:\ProjectsCиШарп\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.genruntimeconfig.cache
 D:\ProjectsCиШарп\BookStore\BookStore.DataAccess\obj\Debug\net8.0\ref\BookStore.DataAccess.dll
+D:\ProjectsCиШарп\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.sourcelink.json

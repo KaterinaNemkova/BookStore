@@ -21,7 +21,6 @@ var configuration = builder.Configuration;
 builder.Services.AddApiAuthentication(configuration);
 
 
-
 builder.Services.Configure<JwtOptions>(configuration.GetSection(nameof(JwtOptions)));
 builder.Services.Configure<AuthorizationOptions>(configuration.GetSection(nameof(AuthorizationOptions)));
 

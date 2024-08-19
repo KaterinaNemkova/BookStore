@@ -126,6 +126,33 @@ namespace BookStore.DataAccess.Migrations
                     b.HasIndex("PermissionId");
 
                     b.ToTable("RolePermissionEntity");
+
+                    b.HasData(
+                        new
+                        {
+                            RoleId = 1,
+                            PermissionId = 2
+                        },
+                        new
+                        {
+                            RoleId = 1,
+                            PermissionId = 1
+                        },
+                        new
+                        {
+                            RoleId = 1,
+                            PermissionId = 3
+                        },
+                        new
+                        {
+                            RoleId = 1,
+                            PermissionId = 4
+                        },
+                        new
+                        {
+                            RoleId = 2,
+                            PermissionId = 1
+                        });
                 });
 
             modelBuilder.Entity("BookStore.DataAccess.Entities.UserEntity", b =>
@@ -153,15 +180,15 @@ namespace BookStore.DataAccess.Migrations
 
             modelBuilder.Entity("BookStore.DataAccess.Entities.UserRoleEntity", b =>
                 {
-                    b.Property<int>("RoleId")
-                        .HasColumnType("integer");
-
                     b.Property<Guid>("UserId")
                         .HasColumnType("uuid");
 
-                    b.HasKey("RoleId", "UserId");
+                    b.Property<int>("RoleId")
+                        .HasColumnType("integer");
 
-                    b.HasIndex("UserId");
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("UserRoleEntity");
                 });
