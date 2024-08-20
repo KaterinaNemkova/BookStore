@@ -1,4 +1,5 @@
-﻿using BookStore.Core.Models;
+﻿using BookStore.Core.Enums;
+using BookStore.Core.Models;
 
 namespace BookStore.DataAccess.Repositories
 {
@@ -6,5 +7,6 @@ namespace BookStore.DataAccess.Repositories
     {
         Task Add(User user);
         Task<User> GetByEmail(string email);
+        Task<HashSet<Permission>> GetUserPermissions(Guid UserId);
     }
 }

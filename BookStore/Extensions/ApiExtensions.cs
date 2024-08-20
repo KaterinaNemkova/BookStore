@@ -1,7 +1,11 @@
 ﻿using BookStore.Application.Services;
+using BookStore.Core.Enums;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace BookStore.Extensions
@@ -36,18 +40,31 @@ namespace BookStore.Extensions
 
             });
 
+            services.AddSingleton<IAuthorizationHandler, PermissionAuthorizationHandler>();
+
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("AdminPolicy", policy =>
+                options.AddPolicy("Admin", policy =>
                 {
-                    policy.RequireClaim("Admin", "true");
+                    policy.Requirements.Add(new PermissionRequirement(new[]
+                    {
+                        Permission.Create,
+                        Permission.Delete,
+                        Permission.Read,
+                        Permission.Update
+                    }));
+                    
                 });
-
-                options.AddPolicy("UserPolicy", policy =>
+                options.AddPolicy("User", policy =>
                 {
-                    policy.RequireClaim("User", "true");
+                    policy.Requirements.Add(new PermissionRequirement(new[]
+                    {
+                        Permission.Read
+                    }));
+
                 });
             });
         }
+
     }
 }

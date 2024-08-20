@@ -24,9 +24,7 @@ namespace BookStore.Application.Services
         {
             Claim[] claims = 
                 [
-                new("userId", user.Id.ToString()),
-                new("Admin","true"),
-                new("User","true")
+                new(CustomClaims.UserId, user.Id.ToString()),
                 ];
 
             var signingCredentials =

@@ -18,7 +18,7 @@ namespace BookStore.Controllers
         }
 
         [HttpGet]
-        [Authorize("AdminPolicy")]
+        [Authorize(Policy ="User")]
         public async Task<ActionResult<List<BooksResponse>>> GetBooks()
         {
             var books = await _service.GetAllBooks();
@@ -27,7 +27,7 @@ namespace BookStore.Controllers
         }
 
         [HttpPost]
-        
+        [Authorize(Policy = "Admin")]
         public async Task<ActionResult<Guid>> CreateBook([FromBody] BooksRequest request)
         {
             var (book, error) = Book.Create(
@@ -46,7 +46,7 @@ namespace BookStore.Controllers
         }
 
         [HttpPut("{id:guid}")]
-
+        [Authorize(Policy = "Admin")]
         public async Task<ActionResult<Guid>> UpdateBook([FromBody] BooksRequest request, Guid id)
         {
             var bookId = await _service.UpdateBook(id, request.Title, request.Description, request.Price);
@@ -55,7 +55,7 @@ namespace BookStore.Controllers
         }
 
         [HttpDelete("{id:guid}")]
-
+        [Authorize(Policy = "Admin")]
         public async Task<ActionResult<Guid>> DeleteBook(Guid id)
         {
             var Id=await _service.DeleteBook(id);
