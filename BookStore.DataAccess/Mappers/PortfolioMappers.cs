@@ -16,7 +16,6 @@ namespace BookStore.DataAccess.Mappers
             {
                 UserId = entity.UserId,
                 BookId = entity.BookId,
-                //book = Book.Create(entity.Book.Id, entity.Book.Title, entity.Book.Description, entity.Book.Price).book
 
             };
 
