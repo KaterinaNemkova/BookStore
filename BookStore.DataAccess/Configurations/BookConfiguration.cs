@@ -11,13 +11,12 @@ namespace BookStore.DataAccess.Configurations
         {
             builder.HasKey(x => x.Id);
 
-            builder.Property(b=>b.Title)
-                .HasMaxLength(Book.MAX_TITLE_LENGTH)
-                .IsRequired();
-
-            builder.Property(b=>b.Description).IsRequired();
-
-            builder.Property(b=>b.Price).IsRequired();
+            builder.HasMany(l => l.Users)
+                           .WithMany(r => r.Books)
+                           .UsingEntity<PortfolioEntity>(
+                           l => l.HasOne<UserEntity>().WithMany().HasForeignKey(l => l.UserId),
+                           r => r.HasOne<BookEntity>().WithMany().HasForeignKey(r => r.BookId)
+                           );
         }
     }
 }

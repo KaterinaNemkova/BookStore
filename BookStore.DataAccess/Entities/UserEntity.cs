@@ -17,5 +17,8 @@ namespace BookStore.DataAccess.Entities
         public string Email { get; set; } = string.Empty;
 
         public ICollection<RoleEntity> Roles { get; set; } = [];
+
+        public ICollection<BookEntity> Books { get; set; } = [];
+
     }
 }

@@ -39,6 +39,8 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.AddScoped<IJWTProvider, JWTProvider>();
 builder.Services.AddScoped<IPermissionService, PermissionService>();
+builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
+
 
 
 var app = builder.Build();

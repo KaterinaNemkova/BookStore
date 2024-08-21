@@ -28,7 +28,7 @@ namespace BookStore.Controllers
 
         [HttpPost]
         [Authorize(Policy = "Admin")]
-        public async Task<ActionResult<Guid>> CreateBook([FromBody] BooksRequest request)
+        public async Task<ActionResult<Book>> CreateBook([FromBody] BooksRequest request)
         {
             var (book, error) = Book.Create(
                 Guid.NewGuid(),

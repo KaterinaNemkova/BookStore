@@ -26,6 +26,8 @@ namespace BookStore.DataAccess
 
         public DbSet<RoleEntity> Roles { get; set; }
 
+        public DbSet<PortfolioEntity> Portfolios { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(BookStoreDbContext).Assembly);

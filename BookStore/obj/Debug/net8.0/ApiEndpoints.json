@@ -35,7 +35,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Guid",
+        "Type": "BookStore.Core.Models.Book",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -101,6 +101,58 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "BookStore.Controllers.PortfolioController",
+    "Method": "ShowMyPortfolios",
+    "RelativePath": "Portfolio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BookStore.Core.Models.Book, BookStore.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookStore.Controllers.PortfolioController",
+    "Method": "AddPortfolio",
+    "RelativePath": "Portfolio/{bookId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookStore.Controllers.PortfolioController",
+    "Method": "DeletePortfolio",
+    "RelativePath": "Portfolio/{bookId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "BookStore.Controllers.UserController",
