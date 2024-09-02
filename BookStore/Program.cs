@@ -1,9 +1,13 @@
 using BookStore.Application;
 using BookStore.Application.Services;
+using BookStore.Contracts;
+using BookStore.Core.Models;
 using BookStore.DataAccess;
 using BookStore.DataAccess.Repositories;
 using BookStore.Extensions;
 using FluentAssertions.Common;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.CookiePolicy;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
@@ -12,7 +16,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddFluentValidation(fv =>
+{
+    fv.RegisterValidatorsFromAssemblyContaining<LoginUserValidator>();
+    fv.RegisterValidatorsFromAssemblyContaining<RegisterUserValidator>();
+    fv.RegisterValidatorsFromAssemblyContaining<BookValidator>();
+});
+
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
@@ -43,6 +55,7 @@ builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
 
 
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -52,8 +65,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
 
+app.UseHttpsRedirection();
+app.UseCors(x =>
+{
+    x.WithHeaders().AllowAnyHeader();
+    x.WithOrigins("http://localhost:3000");
+    x.WithMethods().AllowAnyMethod();
+    x.AllowCredentials();
+});
 app.UseAuthentication();
 
 app.UseAuthorization();
@@ -68,11 +88,5 @@ app.UseCookiePolicy(new CookiePolicyOptions
 });
 
 
-app.UseCors(x =>
-{
-    x.WithHeaders().AllowAnyHeader();
-    x.WithOrigins("http://localhost:3000");
-    x.WithMethods().AllowAnyMethod();
 
-});
 app.Run();

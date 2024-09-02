@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "WX/UF1in0aN6AGepjBAiUWYIVNl+fcZVAg1WJXji7jj16X5Fc2+Q1sK3hiJXXINqMP058+msSml8nim2DWS5cw==",
+  "dgSpecHash": "/5GImko6hGm9yyu6XphbWxF84YTJqo+lByX5F6kPOATMYz+3t9oxHbsOXGsVpQpbD7jvPr08HE+ppfL208ReWA==",
   "success": true,
   "projectFilePath": "D:\\ProjectsCиШарп\\BookStore\\BookStore\\BookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.8\\microsoft.aspnetcore.authentication.jwtbearer.8.0.8.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

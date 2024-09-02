@@ -55,7 +55,7 @@ namespace BookStore.DataAccess.Repositories
                 .ToListAsync();
 
             // Преобразуем сущности книг в объекты Book
-            var books = bookEntities.Select(b => Book.Create(b.Id, b.Title, b.Description, b.Price).book).ToList();
+            var books = bookEntities.Select(b => Book.Create(b.Id, b.Title, b.Description, b.Price)).ToList();
 
             return books;
 
@@ -74,7 +74,14 @@ namespace BookStore.DataAccess.Repositories
             await _context.SaveChangesAsync();
             return PortfolioMappers.ToPortfolio(portfolioEntity);
         }
+        public async Task<bool> AlreadyExist(Guid bookId)
+        {
+            var bookExist = await _context.Portfolios.AnyAsync(x => x.BookId == bookId);
 
-        
+            return bookExist;
+
+        }
+
+
     }
 }

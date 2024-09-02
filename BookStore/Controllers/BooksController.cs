@@ -30,16 +30,13 @@ namespace BookStore.Controllers
         [Authorize(Policy = "Admin")]
         public async Task<ActionResult<Book>> CreateBook([FromBody] BooksRequest request)
         {
-            var (book, error) = Book.Create(
+            var book = Book.Create(
                 Guid.NewGuid(),
                 request.Title,
                 request.Description,
                 request.Price);
 
-            if (!string.IsNullOrEmpty(error))
-            {
-                return BadRequest(error);
-            }
+            
             var bookId = await _service.CreateBook(book);
 
             return Ok(bookId);
@@ -49,6 +46,12 @@ namespace BookStore.Controllers
         [Authorize(Policy = "Admin")]
         public async Task<ActionResult<Guid>> UpdateBook([FromBody] BooksRequest request, Guid id)
         {
+            bool existBook=await _service.AlreadyExistBook(id);
+
+            if (existBook == false)
+            {
+                return NotFound("This book doesn't exist");
+            }
             var bookId = await _service.UpdateBook(id, request.Title, request.Description, request.Price);
 
             return Ok(bookId);
@@ -58,7 +61,13 @@ namespace BookStore.Controllers
         [Authorize(Policy = "Admin")]
         public async Task<ActionResult<Guid>> DeleteBook(Guid id)
         {
-            var Id=await _service.DeleteBook(id);
+            var ExistBook=await _service.AlreadyExistBook(id);
+
+            if (ExistBook == false)
+            {
+                return NotFound("Book is already deleted");
+            }
+           var Id= await _service.DeleteBook(id);
 
             return Ok(Id);
         }

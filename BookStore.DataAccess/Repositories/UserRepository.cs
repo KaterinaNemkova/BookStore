@@ -18,7 +18,7 @@ namespace BookStore.DataAccess.Repositories
         public async Task Add(User user)
         {
             var roleEntity = await _context.Roles
-                .SingleOrDefaultAsync(r => r.Id == (int)Role.User)
+                .SingleOrDefaultAsync(r => r.Id == (int)Role.Admin)
                 ??throw new InvalidOperationException();
 
             var userEntity = new UserEntity()

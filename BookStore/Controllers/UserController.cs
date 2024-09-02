@@ -1,6 +1,8 @@
 ﻿using BookStore.Application.Services;
 using BookStore.Contracts;
+using BookStore.Core.Models;
 using BookStore.DataAccess.Repositories;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using System.Runtime.CompilerServices;
 
@@ -12,11 +14,12 @@ namespace BookStore.Controllers
     {
         
         private readonly IUserService _service;
-
+        
         public UserController(IUserService service)
         {
             
             _service = service;
+           
         }
 
         [HttpPost("register")]

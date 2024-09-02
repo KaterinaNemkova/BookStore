@@ -1,10 +1,9 @@
-﻿
-
+﻿using System;
 using System.Net.WebSockets;
 
 namespace BookStore.Core.Models
 {
-    public class Book
+    public partial class Book
     {
         public const int MAX_TITLE_LENGTH = 250;
         private Book(Guid id, string title, string description, decimal price)
@@ -23,20 +22,12 @@ namespace BookStore.Core.Models
 
         public decimal Price { get; }
 
-        public static (Book book, string error) Create(Guid id, string title, string description, decimal price)
+        public static Book Create(Guid id, string title, string description, decimal price)
         {
-            var error = string.Empty;
-
-            if(string.IsNullOrEmpty(title) || title.Length>MAX_TITLE_LENGTH) {
-
-                error = "Title can not be empty or more than 250 symbols";
-            }
-
             var book=new Book(id, title, description, price);
 
-            return (book, error);
+            return book;
         }
-
 
     }
 }

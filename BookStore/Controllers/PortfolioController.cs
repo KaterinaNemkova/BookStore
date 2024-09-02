@@ -14,10 +14,12 @@ namespace BookStore.Controllers
     public class PortfolioController:ControllerBase
     {
         private readonly IPortfolioRepository _repo;
+        private readonly IBooksService _booksService;
 
-        public PortfolioController(IPortfolioRepository repository)
+        public PortfolioController(IPortfolioRepository repository, IBooksService booksService)
         {
             _repo = repository;
+            _booksService = booksService;
         }
         [HttpGet]
         [Authorize(Policy = "User")]
@@ -40,7 +42,14 @@ namespace BookStore.Controllers
         [HttpPost("{bookId:guid}")]
         [Authorize(Policy = "User")]
         public async Task<IActionResult> AddPortfolio(Guid bookId)
+
         {
+            var checkBook = await _repo.AlreadyExist(bookId);
+
+            if (checkBook == true)
+            {
+                return BadRequest("This book is already in your portfolio");
+            }
             var userIdClaim = HttpContext.User.Claims.FirstOrDefault(claim => claim.Type == "userId");
 
             if (userIdClaim == null)
@@ -49,6 +58,8 @@ namespace BookStore.Controllers
             }
 
             var userId = Guid.Parse(userIdClaim.Value);
+
+           
 
             var portfolio = new Portfolio
             {
@@ -64,6 +75,12 @@ namespace BookStore.Controllers
         [Authorize(Policy = "User")]
         public async Task<IActionResult> DeletePortfolio(Guid bookId)
         {
+            var checkBook = await _repo.AlreadyExist(bookId);
+
+            if (checkBook == false)
+            {
+                return BadRequest("This book is already deleted");
+            }
             var userIdClaim = HttpContext.User.Claims.FirstOrDefault(claim => claim.Type == "userId");
 
             if (userIdClaim == null)

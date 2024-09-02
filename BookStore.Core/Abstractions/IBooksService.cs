@@ -4,6 +4,7 @@ namespace BookStore.Application
 {
     public interface IBooksService
     {
+        Task<bool> AlreadyExistBook(Guid id);
         Task<Guid> CreateBook(Book book);
         Task<Guid> DeleteBook(Guid id);
         Task<List<Book>> GetAllBooks();

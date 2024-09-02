@@ -32,5 +32,11 @@ namespace BookStore.Application.Services
             return await _repository.Delete(id);
         }
 
+        public async Task<bool> AlreadyExistBook(Guid id)
+        {
+            return await _repository.AlreadyExist(id);
+        }
+        
+
     }
 }

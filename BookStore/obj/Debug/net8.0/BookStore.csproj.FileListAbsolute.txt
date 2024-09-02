@@ -234,3 +234,6 @@ D:\ProjectsCиШарп\BookStore\BookStore\bin\Debug\net8.0\FluentAssertions.dll
 D:\ProjectsCиШарп\BookStore\BookStore\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 D:\ProjectsCиШарп\BookStore\BookStore\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 D:\ProjectsCиШарп\BookStore\BookStore\obj\Debug\net8.0\BookStore.sourcelink.json
+D:\ProjectsCиШарп\BookStore\BookStore\bin\Debug\net8.0\FluentValidation.dll
+D:\ProjectsCиШарп\BookStore\BookStore\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+D:\ProjectsCиШарп\BookStore\BookStore\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
