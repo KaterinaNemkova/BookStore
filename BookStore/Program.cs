@@ -5,27 +5,21 @@ using BookStore.Core.Models;
 using BookStore.DataAccess;
 using BookStore.DataAccess.Repositories;
 using BookStore.Extensions;
-using FluentAssertions.Common;
-using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.CookiePolicy;
 using Microsoft.EntityFrameworkCore;
-using System.Configuration;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
 builder.Services.AddControllers().AddFluentValidation(fv =>
 {
     fv.RegisterValidatorsFromAssemblyContaining<LoginUserValidator>();
     fv.RegisterValidatorsFromAssemblyContaining<RegisterUserValidator>();
-    fv.RegisterValidatorsFromAssemblyContaining<BookValidator>();
+    
 });
 
-
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
 var configuration = builder.Configuration;
@@ -52,6 +46,7 @@ builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.AddScoped<IJWTProvider, JWTProvider>();
 builder.Services.AddScoped<IPermissionService, PermissionService>();
 builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
+builder.Services.AddScoped<IBookValidator, BookValidator>();
 
 
 

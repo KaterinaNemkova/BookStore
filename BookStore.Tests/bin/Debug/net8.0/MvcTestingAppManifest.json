@@ -1,0 +1,6 @@
+{
+  "BookStore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\ProjectsCиШарп\\BookStore\\BookStore.Application",
+  "BookStore.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\ProjectsCиШарп\\BookStore\\BookStore.Core",
+  "BookStore.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\ProjectsCиШарп\\BookStore\\BookStore.DataAccess",
+  "BookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\ProjectsCиШарп\\BookStore\\BookStore"
+}

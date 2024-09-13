@@ -14,12 +14,12 @@ namespace BookStore.Controllers
     public class PortfolioController:ControllerBase
     {
         private readonly IPortfolioRepository _repo;
-        private readonly IBooksService _booksService;
+        
 
-        public PortfolioController(IPortfolioRepository repository, IBooksService booksService)
+        public PortfolioController(IPortfolioRepository repository)
         {
             _repo = repository;
-            _booksService = booksService;
+           
         }
         [HttpGet]
         [Authorize(Policy = "User")]

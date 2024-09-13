@@ -12,9 +12,11 @@ namespace BookStore.Controllers
     public class BooksController : ControllerBase
     {
         private readonly IBooksService _service;
-        public BooksController(IBooksService service)
+        private readonly IBookValidator _validator;
+        public BooksController(IBooksService service,IBookValidator validator)
         {
             _service = service;
+            _validator = validator;
         }
 
         [HttpGet]
@@ -30,6 +32,10 @@ namespace BookStore.Controllers
         [Authorize(Policy = "Admin")]
         public async Task<ActionResult<Book>> CreateBook([FromBody] BooksRequest request)
         {
+            if (!_validator.IsValid(request.Title,request.Description,request.Price))
+            {
+                return BadRequest("Book is invalid");
+            }
             var book = Book.Create(
                 Guid.NewGuid(),
                 request.Title,
@@ -51,6 +57,10 @@ namespace BookStore.Controllers
             if (existBook == false)
             {
                 return NotFound("This book doesn't exist");
+            }
+            if (!_validator.IsValid(request.Title, request.Description, request.Price))
+            {
+                return BadRequest("Book is invalid");
             }
             var bookId = await _service.UpdateBook(id, request.Title, request.Description, request.Price);
 
